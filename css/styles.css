@@ -1,0 +1,352 @@
+@charset "utf-8";
+
+/* ========================================= */
+/* 
+   COMP 1850: Final Project
+   Author: Mahmoud Ektefaie
+   Date: 28/06/2022   
+*/
+/* ========================================= */
+
+/* ===== Load Fonts ===== */
+@import url('font-archistico-stylesheet.css');
+@import url('font-quicksand-stylesheet.css');
+
+/* ===== Browser Resets ===== */
+@import url('normalize.css');
+
+/* ===== General Styling ===== */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #454545;
+  --secondary-color: #ff0;
+  --tertiary-color: #ff0051;
+}
+
+body {
+  background-color: #d5d5d5;
+  font-family: 'quicksand';
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+.brand h1 a {
+  font-family: 'archistico';
+  font-size: 3.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.brand h1 a {
+  font-size: 2.9rem;
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+a {
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: solid 3px var(--primary-color);
+}
+
+a:hover,
+a:focus {
+  border-bottom: solid 3px var(--primary-color);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--primary-color);
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e6e6e6;
+}
+
+#container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* ===== Header Section ===== */
+header {
+  width: 100%;
+}
+
+header #container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+
+.brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.brand h1 {
+  flex: 1;
+  text-align: left;
+  margin: 0px;
+  color: var(--primary-color);
+  text-shadow: 0 0 1px #b1b1b1;
+}
+
+button.menu-toggle {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 3px;
+  font-size: 1.4rem;
+}
+
+.show {
+  visibility: visible;
+  height: 182px;
+  border-bottom: solid 2px var(--tertiary-color);
+}
+
+nav {
+  width: 100%;
+  visibility: hidden;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  background-color: var(--primary-color);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  padding: 4px;
+  border-width: 1px;
+  color: #e6e6e6;
+  background-color: var(--primary-color);
+  border-bottom: solid 1px #1b1b1b;
+  text-shadow: 0 0 1px#000000;
+  letter-spacing: 1.4px;
+}
+
+nav a:link,
+nav a:visited {
+  text-decoration: none;
+  border-bottom-width: 1px;
+}
+
+nav a:hover {
+  background-color: #6a6a32;
+  color: var(--tertiary-color);
+  text-decoration: none;
+  border-width: 1px;
+}
+
+.active {
+  color: var(--tertiary-color);
+}
+
+.banner {
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/messi.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.message {
+  color: #fff;
+  background-image: linear-gradient(transparent, #ffff007d, transparent);
+  text-shadow: 1px 1px 1px black;
+  padding: 0.5em 0;
+  font-weight: 400;
+  font-size: 1.1rem;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 1em;
+  text-align: center;
+}
+
+/* ===== Main Section ===== */
+main {
+  flex: 1;
+  display: flex;
+}
+
+main #container {
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 1em;
+  flex: 1;
+}
+
+main #container h1 {
+  overflow-wrap: break-word;
+}
+
+/* ===== Footer Section ===== */
+footer {
+  text-align: center;
+}
+
+footer #container {
+  width: 100%;
+  height: 160px;
+  background-image: url(../images/wave.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f6f6f6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+footer p {
+  font-family: 'quicksand';
+  font-size: 0.8rem;
+  padding-bottom: 1.25em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* ========== Media Queries 1 ========== */
+/* ===================================== */
+@media (min-width: 600px) {
+  .brand h1 a {
+    font-size: 3.4rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .show {
+    height: auto;
+  }
+
+  nav {
+    visibility: visible;
+    height: 43px;
+    border-bottom: solid 2px var(--tertiary-color);
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav a,
+  nav a:link,
+  nav a:visited {
+    border-bottom: 0px;
+    padding: 10px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+    padding-bottom: 1.5em;
+  }
+}
+
+/* ========== Media Queries 2 ========== */
+/* ===================================== */
+@media (min-width: 940px) {
+  .brand {
+    width: 40%;
+  }
+
+  .show {
+    border-bottom: none;
+  }
+
+  nav {
+    width: 60%;
+    height: 60px;
+    background-color: var(--secondary-color);
+    display: flex;
+    border-bottom: none;
+  }
+
+  nav ul {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 1em;
+    border-bottom: none;
+  }
+
+  nav a {
+    color: var(--primary-color);
+    text-shadow: none;
+    background-color: var(--secondary-color);
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--primary-color);
+    margin: 2px;
+  }
+
+  nav a:hover {
+    border-radius: 3px;
+    text-shadow: 1px 2px 0px #1f1f1f;
+    border-radius: 20px 2px;
+  }
+
+  .active {
+    /* color: #ff0055; */
+    background-color: #6a6a3257;
+    text-shadow: 1px 1px 0px #1f1f1f;
+    border-radius: 20px 2px;
+  }
+
+  footer p {
+    font-size: 1rem;
+    padding-bottom: 2em;
+  }
+}
