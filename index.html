@@ -12,6 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoccerEd - Home of soccer education</title>
 
+    <!-- Font Awesome @ 6.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -19,11 +23,11 @@
     <div id="wrapper">
         <header>
             <div id="container">
-                <div class="brand">
+                <div id="brand">
                     <h1><a href="index.html" title="Home page">SoccerEd</a></h1>
                     <button class="menu-toggle">&#9776;</button>
                 </div>
-                <nav>
+                <nav id="navbar">
                     <ul>
                         <li><a class="active" href="#">Home</a></li>
                         <li><a href="lotg.html">LOTG</a></li>
@@ -41,42 +45,52 @@
         </header>
         <main>
             <div id="container">
-                <h1>The Laws of the Game Explained!</h1>
-                <section>
-                    <br>
-                    <h2>Section 1</h2>
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos nesciunt voluptatum, similique
-                        commodi in, ex dignissimos unde deserunt quidem voluptatem libero repellendus rerum aliquid
-                        iure?
-                    </p>
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos nesciunt voluptatum, similique
-                        commodi in, ex dignissimos unde deserunt quidem voluptatem libero repellendus rerum aliquid
-                        iure?
-                    </p>
-                </section>
-                <section>
-                    <br>
-                    <h2>Section 2</h2>
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos nesciunt voluptatum, similique
-                        commodi in, ex dignissimos unde deserunt quidem voluptatem libero repellendus rerum aliquid
-                        iure?
-                    </p>
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos nesciunt voluptatum, similique
-                        commodi in, ex dignissimos unde deserunt quidem voluptatem libero repellendus rerum aliquid
-                        iure?
-                    </p>
-                </section>
-                <section>
-                    <br>
-                    <h2>Section 3</h2>
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos nesciunt voluptatum, similique
-                        commodi in, ex dignissimos unde deserunt quidem voluptatem libero repellendus rerum aliquid
-                        iure?
-                    </p>
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos nesciunt voluptatum, similique
-                        commodi in, ex dignissimos unde deserunt quidem voluptatem libero repellendus rerum aliquid
-                        iure?
-                    </p>
+                <h1>Learn FIFA Soccer Laws</h1>
+                <section class="main">
+                    <article>
+                        <div class="main--body">
+                            <h2>
+                                <span class="education"><i class="fa-solid fa-book-open-reader"></i></span>&nbsp;
+                                <span class="highlight"><span class="capital">E</span>ducation</span>
+                            </h2>
+                            <p>In soccer, the same Laws of the Game (LOTG) apply in every match in every confederation,
+                                country, town and village throughout the world. Referees should apply the Laws within
+                                the 'spirit' of the game to help produce fair and safe matches. <a href="lotg.html"
+                                    title="Laws of The Game">Start learning the laws!</a></p>
+                        </div>
+                        <div class="main--img">
+                            <img src="images/laws-of-the-game-2021-2022.jpg" alt="Laws of the game 2021-22">
+                        </div>
+                    </article>
+                    <article>
+                        <div class="main--body">
+                            <h2>
+                                <span class="evaluation"><i class="fa-solid fa-list-check"></i></span>&nbsp;
+                                <span class="highlight"><span class="capital">E</span>valuation</span>
+                            </h2>
+                            <p>A new LOTG quizzes are available every month. Many of the questions are ones, or resemble
+                                ones, that have been asked by other fellow referees at one time or another. Test your
+                                knowledge of the game by taking <a href="quizzes.html" title="LOTG Monthly Quiz">our
+                                    latest monthly quiz</a>.</p>
+                        </div>
+                        <div class="main--img">
+                            <img src="./images/fifa-test.jpg" alt="Fifa fitness test">
+                        </div>
+                    </article>
+                    <article>
+                        <div class="main--body">
+                            <h2>
+                                <span class="engagement"><i class="fa-solid fa-people-group"></i></span>&nbsp;
+                                <span class="highlight"><span class="capital">E</span>ngagement</span>
+                            </h2>
+                            <p>Get the latest soccer referee news, law changes or modifications, rumors, video
+                                highlights, schedules, and much more from SoccerEd. Check out <a href="news.html"
+                                    title="Soccer Referee Latest News">the latest FIFA news!</a></p>
+                        </div>
+                        <div class="main--img">
+                            <img src="./images/faghani_ref.jpg" alt="Alireza Faghani issuing a yellow card">
+                        </div>
+                    </article>
                 </section>
             </div>
         </main>
