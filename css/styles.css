@@ -1,21 +1,23 @@
 @charset "utf-8";
 
-/* ========================================= */
+/* ================================================================== */
 /* 
    COMP 1850: Final Project
    Author: Mahmoud Ektefaie
    Date: 28/06/2022   
 */
-/* ========================================= */
+/* ================================================================== */
 
-/* ===== Load Fonts ===== */
+/* ----- Load Fonts ----- */
 @import url('font-archistico-stylesheet.css');
 @import url('font-quicksand-stylesheet.css');
 
-/* ===== Browser Resets ===== */
+/* ----- Browser Resets ----- */
 @import url('normalize.css');
 
-/* ===== General Styling ===== */
+/* =================================== */
+/* ======== General Styling ========== */
+/* =================================== */
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -38,7 +40,6 @@ html {
 }
 
 body {
-  background-color: #d5d5d5;
   font-family: 'quicksand';
   font-weight: 400;
   font-size: 1.1rem;
@@ -59,7 +60,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5em;
   text-transform: uppercase;
   color: var(--quinary-color);
@@ -87,20 +88,28 @@ a:focus {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #d4d4d4;
+  background-color: var(--primary-color);
 }
 
-#container {
+.container {
   max-width: 1024px;
   margin: 0 auto;
 }
 
-/* ===== Header Section ===== */
+/* to extend background outside the container */
+.full-width {
+  box-shadow: 0 0 0 100vmax var(--secondary-color);
+  clip-path: inset(0 -100vmax);
+}
+
+/* =================================== */
+/* ============= HEADER ============== */
+/* =================================== */
 header {
   width: 100%;
 }
 
-header #container {
+header .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -251,31 +260,37 @@ nav#navbar ul li a.active {
 .capital {
   font-size: 2.4rem;
   font-weight: 600;
-  /* border: rgb(47, 47, 127) 1px dashed; */
 }
 
-/* ===== Main Section ===== */
+/* =================================== */
+/* ============== MAIN =============== */
+/* =================================== */
 main {
   flex: 1;
   display: flex;
 }
 
-main #container {
+main .container {
   width: 100%;
   background-color: #f6f6f6;
   padding: 1.1em;
   flex: 1;
 }
 
-main #container h1 {
+main .container h1 {
   overflow-wrap: break-word;
 }
 
-/* index.html Main */
-main #container h2 {
-  font-size: 1.5;
+main .container h1:before {
+  content: '';
+  border: 6px solid var(--tertiary-color);
+  margin-right: 0.3em;
+  border-top: 0;
+  border-bottom: 0;
 }
-section.main article {
+
+/* ----- index.html Main ----- */
+div.main article {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5em;
@@ -289,44 +304,20 @@ section.main article {
   width: 100%;
 }
 
-section.main article:last-child {
+div.main article:last-child {
   margin-bottom: 0;
 }
 
-section.main article p {
+div.main article p {
   margin-bottom: 1.5em;
 }
 
-span.education {
-  display: inline-block;
-  height: 45px;
-  width: 45px;
-  /* border: 1px solid var(--quinary-color); */
-  border-radius: 6px;
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 1px;
-  background-color: var(--quinary-color);
-  color: white;
-}
-span.evaluation {
-  display: inline-block;
-  height: 45px;
-  width: 45px;
-  /* border: 1px solid var(--quinary-color); */
-  border-radius: 6px;
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 1px;
-  /* margin-bottom: 6px; */
-  background-color: var(--quinary-color);
-  color: white;
-}
+span.education,
+span.evaluation,
 span.engagement {
   display: inline-block;
   height: 45px;
   width: 45px;
-  /* border: 1px solid var(--quinary-color); */
   border-radius: 6px;
   font-size: 2rem;
   text-align: center;
@@ -335,8 +326,152 @@ span.engagement {
   color: white;
 }
 
-/* ===== Footer Section ===== */
-footer #container {
+/* ----- lotg.html Main ----- */
+main.lotg-main .container {
+  padding: 1em 1.5em;
+}
+
+.lotg-intro--flex ol {
+  margin-left: 2.5em;
+  padding: 1em 0 2em;
+}
+
+figure.lotg-21-22 {
+  display: none;
+}
+
+#law-1 {
+  grid-area: law1;
+}
+#law-2 {
+  grid-area: law2;
+}
+#law-3 {
+  grid-area: law3;
+}
+#law-4 {
+  grid-area: law4;
+}
+#law-5 {
+  grid-area: law5;
+}
+#law-6 {
+  grid-area: law6;
+}
+#law-7 {
+  grid-area: law7;
+}
+#law-8 {
+  grid-area: law8;
+}
+#law-9 {
+  grid-area: law9;
+}
+#law-10 {
+  grid-area: law10;
+}
+#law-11 {
+  grid-area: law11;
+}
+#law-12 {
+  grid-area: law12;
+}
+#law-13 {
+  grid-area: law13;
+}
+#law-14 {
+  grid-area: law14;
+}
+#law-15 {
+  grid-area: law15;
+}
+#law-16 {
+  grid-area: law16;
+}
+#law-17 {
+  grid-area: law17;
+}
+
+div.lotg-summary--grid {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'law1'
+    'law2'
+    'law3'
+    'law4'
+    'law5'
+    'law6'
+    'law7'
+    'law8'
+    'law9'
+    'law10'
+    'law11'
+    'law12'
+    'law13'
+    'law14'
+    'law15'
+    'law16'
+    'law17';
+}
+
+div.lotg-summary--grid article {
+  background-color: #edeee0;
+  padding: 0.5em;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 0px rgb(163, 163, 163);
+  display: flex;
+  flex-direction: column;
+}
+
+div.law-img {
+  width: 60%;
+  margin: 1em auto 0.5em;
+}
+
+div.law-img img {
+  border-radius: 5% 60% 5% 5%;
+}
+
+div.law-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+div.law-body h3 {
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+div.law-body ul {
+  margin-left: 1em;
+}
+
+div.law-body ul li {
+  line-height: 1.6;
+}
+
+span.back-to-top {
+  align-self: flex-end;
+  margin-top: 1em;
+}
+
+span.back-to-top a {
+  font-size: 1rem;
+  color: darkblue;
+  border-bottom: 0;
+}
+
+span.back-to-top a:hover {
+  color: var(--tertiary-color);
+}
+
+/* =================================== */
+/* ============= FOOTER ============== */
+/* =================================== */
+footer .container {
   width: 100%;
   height: 160px;
   background-image: url(../images/wave.svg);
@@ -360,8 +495,9 @@ footer p {
   text-align: center;
 }
 
-/* ========== Media Queries 1 ========== */
-/* ===================================== */
+/* =============================================== */
+/* ========== MEDIUM Media Query @665px ========== */
+/* =============================================== */
 @media (min-width: 665px) {
   #brand h1 a {
     font-size: 3.4rem;
@@ -398,13 +534,13 @@ footer p {
     color: var(--tertiary-color);
   }
 
-  /* index.html */
-  section.main article {
+  /* ----- index.html ----- */
+  div.main article {
     flex-direction: row;
     align-items: center;
   }
 
-  main #container {
+  main .container {
     padding: 1.5em;
   }
 
@@ -421,10 +557,58 @@ footer p {
     bottom: 1.75em;
     font-size: 0.9rem;
   }
+
+  /* ----- lotg.html ----- */
+  main.lotg-main .container {
+    padding: 1em 2em;
+  }
+
+  div.lotg-summary--grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'law1 law2'
+      'law3 law4'
+      'law5 law6'
+      'law7 law8'
+      'law9 law10'
+      'law11 law12'
+      'law13 law14'
+      'law15 law16'
+      'law17 .';
+  }
+
+  .lotg-intro--flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  figure.lotg-21-22 {
+    display: block;
+    max-width: 35%;
+  }
+
+  div.law-img {
+    width: 60%;
+  }
+
+  div.law-img img {
+    border-radius: 15% 2% 15% 2%;
+    margin: 0 auto;
+  }
+
+  div.lotg-summary--grid article div.law-body {
+    flex: 1;
+  }
+
+  div.lotg-summary--grid article div.law-body ul {
+    flex: 1;
+  }
 }
 
-/* ========== Media Queries 2 ========== */
-/* ===================================== */
+/* =============================================== */
+/* ========== LARGE Media Query @940px ========== */
+/* =============================================== */
 @media (min-width: 940px) {
   #brand {
     width: 40%;
@@ -476,21 +660,22 @@ footer p {
   }
 
   /* ----- index.html ----- */
-  main #container {
+  main .container {
     padding-bottom: 3em;
   }
-  section.main {
+
+  div.main {
     display: flex;
     justify-content: space-around;
   }
 
-  section.main article {
+  div.main article {
     flex-direction: column;
     width: 31%;
     margin: 0;
   }
 
-  section.main article p {
+  div.main article p {
     order: 1;
   }
 
@@ -502,6 +687,62 @@ footer p {
 
   .main--img {
     width: 100%;
+  }
+
+  /* ----- lotg.html ----- */
+  main.lotg-main .container {
+    padding: 1em 3em 3em;
+  }
+
+  figure.lotg-21-22 {
+    max-width: 30%;
+  }
+
+  figure.lotg-21-22 img {
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px var(--quinary-color);
+  }
+
+  div.lotg-summary--grid article {
+    flex-direction: row;
+  }
+
+  div.law-img {
+    width: 25%;
+  }
+
+  div.law-img img {
+    width: 80%;
+    border-radius: 7px;
+    margin-left: 1em;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px var(--quinary-color);
+  }
+
+  span.back-to-top {
+    align-self: center;
+    transform: translateX(-120px);
+  }
+
+  div.lotg-summary--grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      'law1 law1 law1'
+      'law2 law2 law2'
+      'law3 law3 law3'
+      'law4 law4 law4'
+      'law5 law5 law5'
+      'law6 law6 law6'
+      'law7 law7 law7'
+      'law8 law8 law8'
+      'law9 law9 law9'
+      'law10 law10 law10'
+      'law11 law11 law11'
+      'law12 law12 law12'
+      'law13 law13 law13'
+      'law14 law14 law14'
+      'law15 law15 law15'
+      'law16 law16 law16'
+      'law17 law17 law17';
   }
 
   footer p {

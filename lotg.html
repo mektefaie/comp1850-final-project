@@ -10,15 +10,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoccerEd - Laws of the Game</title>
+    <title>SoccerEd - FIFA Laws of the Game</title>
 
+    <!-- Font Awesome @ 6.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <div id="wrapper">
         <header>
-            <div id="container">
+            <div class="container">
                 <div id="brand">
                     <h1><a href="index.html" title="Home page">SoccerEd</a></h1>
                     <button class="menu-toggle">&#9776;</button>
@@ -39,14 +43,357 @@
                 </div>
             </div>
         </header>
-        <main>
-            <div id="container">
-                <h1>FIFA Laws of the Game 2021-22</h1>
+        <main class="lotg-main">
+            <div class="container">
+                <h1 id="back-to-top">FIFA Laws of the Game 2021-22</h1>
+                <section class="lotg-intro">
+                    <h2><span class="highlight"><span class="capital">T</span>he laws of the game</span></h2>
+                    <p>Every soccer match is governed by the Laws of the Game (LOTG). The Laws of the Game are the only
+                        rules of soccer set and written by Fédération Internationale de Football Association (FIFA).
+                    </p>
+                    <div class="lotg-intro--flex">
+                        <ol>
+                            <li><a href="#law-1">The Field of Play</a></li>
+                            <li><a href="#law-2">The Ball</a></li>
+                            <li><a href="#law-3">The Players</a></li>
+                            <li><a href="#law-4">The Players' Equipment</a></li>
+                            <li><a href="#law-5">The Referee</a></li>
+                            <li><a href="#law-6">The Other Match Officials</a></li>
+                            <li><a href="#law-7">The Duration of the Match</a></li>
+                            <li><a href="#law-8">The Start and Restart of Play</a></li>
+                            <li><a href="#law-9">The Ball In and Out of Play</a></li>
+                            <li><a href="#law-10">Determining the Outcome of a Match</a></li>
+                            <li><a href="#law-11">Offside</a></li>
+                            <li><a href="#law-12">Fouls and Misconducts</a></li>
+                            <li><a href="#law-13">Free Kicks</a></li>
+                            <li><a href="#law-14">The Penalty Kick</a></li>
+                            <li><a href="#law-15">The Throw-In</a></li>
+                            <li><a href="#law-16">The Goal Kick</a></li>
+                            <li><a href="#law-17">The Corner Kick</a></li>
+                        </ol>
+                        <figure class="lotg-21-22">
+                            <img src="images/laws/lotg-580-820.png" alt="Laws of the Game book cover">
+                        </figure>
+                    </div>
+                </section>
+                <section class="lotg-summary">
+                    <h2><span class="highlight"><span class="capital">S</span>ummary of the Laws</span></h2>
+                    <div class="lotg-summary--grid">
+                        <article id="law-1">
+                            <div class="law-img">
+                                <img src="images/laws/law-1.png" alt="FIFA Law 1">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 1 - The Field of Play</h3>
+                                <ul>
+                                    <li>The colour of artificial surfaces must be green.</li>
+                                    <li>The field of play must be rectangular.</li>
+                                    <li>It must be marked with continuous lines which must not be dangerous.</li>
+                                    <li>All lines must be of the same width, which must not be more than 12 cm (5 ins).
+                                    </li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-2">
+                            <div class="law-img">
+                                <img src="images/laws/law-2.png" alt="FIFA Law 2">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 2 - The Ball</h3>
+                                <ul>
+                                    <li>All balls must be spherical and made of suitable material.</li>
+                                    <li>All balls must be of a pressure equal to 0.6-1.1 atmosphere (600-1,100
+                                        g/cm²) at sea level (8.5-15.6 lbs/sq in).</li>
+                                    <li>All balls used in matches played in an official FIFA-sanctioned competition must
+                                        bear one of the following marks:</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-3">
+                            <div class="law-img">
+                                <img src="images/laws/law-3.png" alt="FIFA Law 3">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 3 - The Players</h3>
+                                <ul>
+                                    <li>A match is played by two teams, each with a maximum of eleven players; one must
+                                        be the goalkeeper.</li>
+                                    <li>A match may not start or continue if either team has fewer than seven players.
+                                    </li>
+                                    <li>The team captain has no special status or privileges but has a degree of
+                                        responsibility for the behaviour of the team.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-4">
+                            <div class="law-img">
+                                <img src="images/laws/law-4.png" alt="FIFA Law 4">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 4 - The Players' Equipment</h3>
+                                <ul>
+                                    <li>A player must not use equipment or wear anything that is dangerous.</li>
+                                    <li>All items of jewellery (necklaces, rings, bracelets, earrings, leather bands,
+                                        rubber bands, etc.) are forbidden and must be removed.</li>
+                                    <li>Using tape to cover jewellery is not permitted.</li>
+                                    <li>The compulsory equipment of a player comprises: a shirt with sleeves, shorts,
+                                        socks, shinguards and footwear.</li>
+                                    <li>Equipment must not have any political, religious or personal slogans, statements
+                                        or images.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-5">
+                            <div class="law-img">
+                                <img src="images/laws/law-5.png" alt="FIFA Law 5">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 5 - The Referee</h3>
+                                <ul>
+                                    <li>The referee enforces the Laws of the Game.</li>
+                                    <li>The referee controls the match in cooperation with the other match officials.
+                                    </li>
+                                    <li>The referee acts as timekeeper, keeps a record of the match and provides the
+                                        appropriate authorities with a match report, including information on
+                                        disciplinary action and any other incidents that occurred before, during or
+                                        after the match.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-6">
+                            <div class="law-img">
+                                <img src="images/laws/law-6.png" alt="FIFA Law 6">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 6 - The Other Match Officials</h3>
+                                <ul>
+                                    <li>Other match officials will assist the referee in controlling the match. </li>
+                                    <li>The match officials operate under the direction of the referee.</li>
+                                    <li>The 'on-field' match officials assist the referee with inspecting the field of
+                                        play, the balls and players' equipment (including if problems have been
+                                        resolved) and maintaining records of time, goals, misconduct etc.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-7">
+                            <div class="law-img">
+                                <img src="images/laws/law-7.png" alt="FIFA Law 7">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 7 - The Duration of the Match</h3>
+                                <ul>
+                                    <li>A match lasts for two equal halves of 45 minutes.</li>
+                                    <li>A match may only be reduced if agreed between the referee and the two teams
+                                        before the start of the match and if in accordance with competition rules.</li>
+                                    <li>Players are entitled to an interval at half-time, not exceeding 15 minutes.</li>
+                                    <li>Allowance is made by the referee in each half for all time lost in that half
+                                        through: substitutions, assessment and/or removal of injured players, wasting
+                                        time, disciplinary sanctions, medical stoppages, delays relating to VAR 'checks'
+                                        and 'reviews' or any other cause, including any significant delay to a restart
+                                        (e.g. goal celebrations)</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-8">
+                            <div class="law-img">
+                                <img src="images/laws/law-8.png" alt="FIFA Law 8">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 8 - The Start and Restart of Play</h3>
+                                <ul>
+                                    <li>A kick-off starts both halves of a match, both halves of extra time and restarts
+                                        play after a goal has been scored. </li>
+                                    <li>Free kicks (direct or indirect), penalty kicks, throw-ins, goal kicks and corner
+                                        kicks are other restarts.</li>
+                                    <li>A dropped ball is the restart when the referee stops play and the Law does not
+                                        require one of the above restarts.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-9">
+                            <div class="law-img">
+                                <img src="images/laws/law-9.png" alt="FIFA Law 9">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 9 - The Ball In and Out of Play</h3>
+                                <ul>
+                                    <li>The ball is out of play when: a) it has wholly passed over the goal line or
+                                        touchline on the ground or in the air, b) play has been stopped by the referee,
+                                        c)it touches a match official, remains on the field of play and: a team starts a
+                                        promising attack, or the ball goes directly into the goal, or the team in
+                                        possession of the ball changes.</li>
+                                    <li>The ball is in play at all other times when it touches a match official and when
+                                        it rebounds off a goalpost, crossbar or corner flagpost and remains on the field
+                                        of play.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-10">
+                            <div class="law-img">
+                                <img src="images/laws/law-10.png" alt="FIFA Law 10">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 10 - Determining the Outcome of a Match</h3>
+                                <ul>
+                                    <li>A goal is scored when the whole of the ball passes over the goal line,
+                                        between the goalposts and under the crossbar.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-11">
+                            <div class="law-img">
+                                <img src="images/laws/law-11.png" alt="FIFA Law 11">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 11 - Offside</h3>
+                                <ul>
+                                    <li>It is not an offence to be in an offside position.</li>
+                                    <li>A player is in an offside position if: a) any part of the head, body or feet is
+                                        in the opponents' half (excluding the halfway line) and, b) any part of the
+                                        head, body or feet is nearer to the opponents' goal line than both the ball and
+                                        the second-last opponent.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-12">
+                            <div class="law-img">
+                                <img src="images/laws/law-12.png" alt="FIFA Law 12">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 12 - Fouls and Misconducts</h3>
+                                <ul>
+                                    <li>Direct and indirect free kicks and penalty kicks can only be awarded for
+                                        offences committed when the ball is in play.</li>
+                                    <li>A direct free kick is awarded in the following scenarios: charging, jumping at,
+                                        kicking, pushing, striking (including head-butting), tackling, tripping an
+                                        opponent, deliberately committing a handball offence, holding an opponent,
+                                        impeding an opponent with contact, biting or spitting at someone, throwing an
+                                        object at the ball, an opponent or a match official, or making contact with the
+                                        ball with a held object.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-13">
+                            <div class="law-img">
+                                <img src="images/laws/law-13.png" alt="FIFA Law 13">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 13 - Free Kicks</h3>
+                                <ul>
+                                    <li>Direct and indirect free kicks are awarded to the opposing team of a player,
+                                        substitute, substituted or sent-off player, or team official guilty of an
+                                        offence.</li>
+                                    <li>A free kick can be taken by lifting the ball with a foot or both feet
+                                        simultaneously.</li>
+                                    <li>Feinting to take a free kick to confuse opponents is permitted as part of
+                                        football.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-14">
+                            <div class="law-img">
+                                <img src="images/laws/law-14.png" alt="FIFA Law 14">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 14 - The Penalty Kick</h3>
+                                <ul>
+                                    <li>A penalty kick is awarded if a player commits a direct free kick offence inside
+                                        their penalty area or off the field.</li>
+                                    <li>A goal may be scored directly from a penalty kick.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-15">
+                            <div class="law-img">
+                                <img src="images/laws/law-15.png" alt="FIFA Law 15">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 15 - The Throw-in</h3>
+                                <ul>
+                                    <li>A throw-in is awarded to the opponents of the player who last touched the ball
+                                        when the whole of the ball passes over the touchline, on the ground or in the
+                                        air.</li>
+                                    <li>A goal cannot be scored directly from a throw-in: a) if the ball enters the
+                                        opponents' goal - a goal kick is awarded, b) if the ball enters the thrower's
+                                        goal - a corner kick is awarded.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-16">
+                            <div class="law-img">
+                                <img src="images/laws/law-16.png" alt="FIFA Law 16">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 16 - The Goal Kick</h3>
+                                <ul>
+                                    <li>A goal kick is awarded when the whole of the ball passes over the goal line, on
+                                        the ground or in the air, having last touched a player of the attacking team,
+                                        and a goal is not scored.</li>
+                                    <li>A goal may be scored directly from a goal kick, but only against the opposing
+                                        team; if the ball directly enters the kicker's goal, a corner kick is awarded to
+                                        the opponents.</li>
+                                    <li>The ball is in play when it is kicked and clearly moves.</li>
+                                    <li>Opponents must be outside the penalty area until the ball is in play.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                        <article id="law-17">
+                            <div class="law-img">
+                                <img src="images/laws/law-17.png" alt="FIFA Law 17">
+                            </div>
+                            <div class="law-body">
+                                <h3>Law 17 - The Corner Kick</h3>
+                                <ul>
+                                    <li>A corner kick is awarded when the whole of the ball passes over the goal line,
+                                        on the ground or in the air, having last touched a player of the defending team,
+                                        and a goal is not scored.</li>
+                                    <li>A goal may be scored directly from a corner kick, but only against the opposing
+                                        team; if the ball directly enters the kicker's goal a corner kick is awarded to
+                                        the opponents.</li>
+                                </ul>
+                                <span class="back-to-top"><a href="#back-to-top"><i class="fa-solid fa-angles-up"></i>
+                                        Top</a></span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
 
             </div>
         </main>
         <footer>
-            <div id="container">
+            <div class="container">
                 <p><b>&copy;2022</b> Mahmoud Ektefaie. All rights reserved.</p>
             </div>
         </footer>
