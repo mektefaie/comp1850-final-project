@@ -12,6 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoccerEd - Contact Us</title>
 
+    <!-- Font Awesome @ 6.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -39,9 +43,70 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main class="get-in-touch">
             <div class="container">
-                <h1>Reach us with your questions!</h1>
+                <h1>Get in Touch!</h1>
+                <p>We love questions and feedback - and we're always happy to help! Here are some ways to
+                    contact us. Send us a message and we'll respond within 24 hours.
+                </p>
+                <div class="get-in-touch--flex">
+                    <div class="get-in-touch--info">
+                        <section class="get-in-touch--contact-us">
+                            <h2><span class="highlight"><span class="capital">C</span>ontact Us</span></h2>
+                            <address>
+                                <b>SoccerEd</b><br>
+                                1850 BCIT Dr. <br>
+                                Vancouver, BC, X1Y 2Z3 <br>
+                                Canada <br>
+                                <br>
+                                <i class="fa-solid fa-phone"></i>&ensp;<a href="tel:+16041112233">(604) 111-2233</a><br>
+                                <i class="fa-solid fa-globe"></i>&ensp;<a href="index.html" title="SoccerEd Homepage">
+                                    www.soccer-ed.com</a><br>
+                                <i class="fa-solid fa-envelope"></i>&ensp;<a href="mailto:soccer-ed@bcit.com">
+                                    soccer-ed@bcit.com</a><br>
+                            </address>
+                        </section>
+                        <section class="get-in-touch--follow-us">
+                            <h2><span class="highlight"><span class="capital">F</span>ollow Us</span></h2>
+                            <div class="socials">
+                                <i class="fa-brands fa-facebook-square"></i>
+                                <i class="fa-brands fa-twitter-square"></i>
+                                <i class="fa-brands fa-instagram-square"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </section>
+                    </div>
+                    <section class="get-in-touch--form">
+                        <h2><span class="highlight"><span class="capital">S</span>end us a message</span></h2>
+                        <!-- Quiz form -->
+                        <form id="contact-us" action="#" method="post">
+                            <div class="input-label-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name">
+                            </div>
+
+                            <div class="input-label-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter a valid email address"
+                                    required>
+                            </div>
+                            <div class="input-label-group">
+                                <label for="comment">Message</label>
+                                <textarea id="comment" name="comment" placeholder="Enter a message"></textarea>
+                            </div>
+                            <div class="input-label-terms">
+
+                                <label for="terms"> <input type="checkbox" id="terms" name="terms" value="no"><b> I
+                                        accept the</b> <a href="#" title="SoccerEd Terms of Service">Terms of
+                                        Service.</a></label>
+                            </div>
+                            <!-- Submit and Reset Buttons -->
+                            <div class="contact-us-submit-buttons">
+                                <input class="form_button" type="submit" value="Submit" disabled />
+                                <input class="form_button" type="reset" value="Reset" /></div>
+                        </form>
+                    </section>
+                </div>
 
             </div>
         </main>
