@@ -329,10 +329,10 @@ span.education,
 span.evaluation,
 span.engagement {
   display: inline-block;
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   border-radius: 6px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   padding-top: 1px;
   background-color: var(--quinary-color);
@@ -536,7 +536,7 @@ form#quiz fieldset {
   border-style: none;
   border-radius: 20px;
   font-weight: 400;
-  color: white;
+  color: #fff;
   text-shadow: 0 0 1px #1e1e1e;
   box-shadow: 0 0 1px 0 rgb(27, 27, 27);
 }
@@ -558,7 +558,7 @@ form#quiz fieldset {
 
 article.archived-quiz {
   margin: 0.5em 0;
-  box-shadow: 0 0 2px 0 rgb(119, 119, 119);
+  box-shadow: 0 0 2px 0 #777777;
 }
 
 article.archived-quiz h3 {
@@ -569,6 +569,100 @@ article.archived-quiz h3 {
 
 article.archived-quiz a {
   border-bottom: none;
+}
+
+/* ----- lorem.html ----- */
+div.lorem--2 {
+  /* background-color: crimson; */
+  grid-area: lor2;
+}
+div.lorem--3a {
+  background-color: crimson;
+  grid-area: lor3a;
+}
+div.lorem--3b {
+  /* background-color: darkgoldenrod; */
+  grid-area: lor3b;
+}
+div.lorem--5 {
+  background-color: darkviolet;
+  grid-area: lor5;
+}
+div.lorem--6 {
+  background-color: teal;
+  grid-area: lor6;
+}
+
+div.lorem--grid {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'lor2'
+    'lor3a'
+    'lor3b'
+    'lor5'
+    'lor6';
+}
+
+blockquote {
+  width: 95%;
+  font-size: 1.1rem;
+  background: #f3f3f38a;
+  border-left: 3px solid var(--tertiary-color);
+  border-right: 3px solid var(--tertiary-color);
+  border-radius: 20px;
+  margin: 2em auto;
+  padding: 1.5em;
+  quotes: '\201C''\201D''\2018''\2019';
+  font-weight: 400;
+  background-color: #e6eff3;
+  box-shadow: 0 0 2px 1px rgb(236, 236, 236);
+}
+
+blockquote:before {
+  color: var(--tertiary-color);
+  content: '"';
+  font-size: 2em;
+  line-height: 0.1em;
+  vertical-align: -0.3em;
+}
+
+cite {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+/* 
+pre {
+  width: 35%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  overflow: auto;
+  overflow-y: hidden;
+  font-size: 0.9rem;
+  line-height: 20px;
+  background: #464646;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px 0px rgb(208, 208, 208);
+}
+
+pre code {
+  color: rgb(241, 242, 233);
+} */
+
+table {
+  width: 90%;
+  margin: 1em auto;
+  font-size: 1rem;
+  background-color: #034264;
+  border-radius: 15px;
+  box-shadow: 0 0 2px 0px #a7a7a7;
+}
+
+td,
+th {
+  padding: 0.5em;
 }
 
 /* contact.html */
@@ -587,7 +681,7 @@ div.socials i {
   font-size: 2rem;
   margin: 0.25em;
   color: var(--tertiary-color);
-  text-shadow: 0 1px 0px rgb(81, 81, 81);
+  text-shadow: 0 1px 0px #515151;
 }
 
 div.socials i:hover {
@@ -696,6 +790,55 @@ footer p {
   font-weight: 400;
   letter-spacing: 1px;
   text-align: center;
+}
+
+/* ========================================================== */
+/* ========== SMALL Media Query - Responsive Table ========== */
+/* ========================================================== */
+@media (min-width: 320px) and (max-width: 664px) {
+  th,
+  td,
+  tr {
+    display: block;
+    background-color: #fff;
+  }
+
+  table tr:first-child {
+    display: none;
+  }
+
+  td:nth-of-type(1):before {
+    content: 'Header 1: ';
+    font-weight: bold;
+  }
+
+  td:nth-of-type(2):before {
+    content: 'Header 2: ';
+    font-weight: bold;
+  }
+
+  td:nth-of-type(3):before {
+    content: 'Header 3: ';
+    font-weight: bold;
+  }
+
+  td:nth-child(2) {
+    background-color: #e6eff3;
+  }
+
+  td,
+  th {
+    border: solid 1px var(--quinary-color);
+    border-bottom: 0;
+  }
+
+  td:last-child {
+    border-bottom: solid 1px var(--quinary-color);
+  }
+
+  tr {
+    margin: 1em;
+  }
 }
 
 /* =============================================== */
@@ -810,7 +953,7 @@ footer p {
 
   /* -----quizzes.html ----- */
   p.quizzes-page {
-    padding: 0 4em;
+    padding: 0 1em;
   }
 
   form#quiz {
@@ -842,7 +985,74 @@ footer p {
     width: 49%;
   }
 
-  /* contact.html */
+  /* ----- lorem.html ----- */
+  main#lorem .container {
+    padding: 1em 2em 3em;
+  }
+
+  div.lorem--grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'lor2 lor2 lor2'
+      'lor5 lor3a lor3a'
+      'lor3b lor3b lor6';
+  }
+
+  blockquote {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  blockquote:before {
+    font-size: 2.4em;
+  }
+
+  cite {
+    font-size: 1rem;
+  }
+
+  table {
+    font-size: 1rem;
+    background-color: transparent;
+  }
+
+  table,
+  td {
+    border-collapse: collapse;
+  }
+
+  th {
+    background-color: #034264;
+    color: #fff;
+  }
+
+  th:first-child {
+    border-radius: 15px 0 0 0;
+  }
+
+  th:last-child {
+    border-radius: 0 15px 0 0;
+  }
+
+  td {
+    text-align: center;
+    background-color: #fff;
+    border: 0;
+  }
+
+  tr:nth-child(3) td,
+  tr:nth-child(5) td {
+    background-color: #e6eff3;
+  }
+
+  tr:last-child td:first-child {
+    border-radius: 0 0 0 15px;
+  }
+  tr:last-child td:last-child {
+    border-radius: 0 0 15px 0;
+  }
+
+  /* ----- contact.html ----- */
   main.get-in-touch .container > p {
     padding: 1em 2em;
   }
@@ -1043,7 +1253,20 @@ footer p {
     width: 31%;
   }
 
-  /* contact.html */
+  /* ----- lorem.html ----- */
+  main#lorem .container {
+    padding: 1em 3em 3em;
+  }
+
+  div.lorem--grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      'lor2 lor2 lor2 lor2 lor5 lor5'
+      'lor2 lor2 lor2 lor2 lor6 lor6'
+      'lor3a lor3a lor3a lor3b lor3b lor3b';
+  }
+
+  /* ----- contact.html ----- */
   main.get-in-touch .container > p {
     padding: 1em 5em;
   }
