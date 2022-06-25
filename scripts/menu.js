@@ -1,3 +1,8 @@
+// COMP 1850: Final Project
+// Author: Mahmoud Ektefaie
+// Date: 25/06/2022
+// Source: COMP 1850 class notes
+
 /* 
 This JavaScript Document
 will enable the slide n hide 

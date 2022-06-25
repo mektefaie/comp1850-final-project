@@ -1,3 +1,8 @@
+// COMP 1850: Final Project
+// Author: Mahmoud Ektefaie
+// Date: 25/06/2022
+// Source: https://github.com/mektefaie/christmas-countdown.git 
+
 let myCounter = setInterval(function () {
   const countDownDate = new Date(2022, 11, 11, 0, 0, 0, 0).getTime();
   let now = new Date().getTime();
