@@ -12,7 +12,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoccerEd - Latest Referee News</title>
 
+    <!-- Font Awesome @ 6.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Google Fonts (monospace) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- External Scripts -->
+    <script defer src="./scripts/countdown.js"></script>
+    <script defer src="./scripts/menu.js"></script>
 </head>
 
 <body>
@@ -39,10 +53,56 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main class="news-main">
             <div class="container">
-                <h1>Latest News</h1>
+                <h1>FIFA Referee News</h1>
 
+                <section class="news">
+                    <h2><span class="highlight"><span class="capital">L</span>atest News</span></h2>
+                    <div class="news--grid">
+                        <article id="news-1">
+                            <img src="images/news/Kateryna_monzul_first_female_referee_UK.webp"
+                                alt="Kateryna Raises her right hand for an offside call">
+                            <h3>Kateryna Monzul will become first woman to referee England men's match</h3>
+                        </article>
+                        <article id="news-2">
+                            <img src="images/news/bibiana_Steinhaus_inviting_female_officials.webp"
+                                alt="Bibiana Steinhaus acknowledges a soccer player on the field">
+                            <h3>Pioneering referee aims to keep officials up with women's game's rise</h3>
+                        </article>
+                        <article id="news-3">
+                            <img src="images/news/tackling_keeper.webp" alt="Ryan Fraser tackles ManCity keeper">
+                            <h3>'Feeling of injustice': Howe speaks out as Newcastle contact league over referees
+                            </h3>
+                        </article>
+
+                        <article id="news-4">
+                            <img src="images/news/referee_decides_on_card.webp"
+                                alt="Jorginho steps on Grealish with excessive force">
+                            <h3>Raheem Sterling and Jorginho decisions were right, insists Uefa's referee chief</h3>
+                        </article>
+                        <article id="news-5">
+                            <img src="images/news/consulting_var.webp"
+                                alt="Peter Mason consulting VAR during a soccer match">
+                            <h3>Raising the VAR: officials hope lighter touch will help stop controversies</h3>
+                        </article>
+
+                    </div>
+                    <section class="countdown">
+                        <h2><span class="highlight"><span class="capital">F</span>IFA World Cup Qatar 2022™ starts
+                                in:</span></h2>
+                        <div class="countdown--flex">
+                            <div class="countdown-clock">
+                                <p id="daysLeft"></p>
+                                <p id="timeLeft"></p>
+                                <p class="countdown-text"></p>
+                            </div>
+                            <div class="countdown-image">
+                                <img src="images/qatar2022.png" alt="FIFA World Cup Qatar 2022">
+                            </div>
+                        </div>
+                    </section>
+                </section>
             </div>
         </main>
         <footer>
@@ -51,7 +111,6 @@
             </div>
         </footer>
     </div>
-    <script src="./scripts/menu.js"></script>
 </body>
 
 </html>
